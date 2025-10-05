@@ -1,17 +1,17 @@
-public class removeNumber {
-    public static void main (String[] args) {
-        String str  = "Hello983714567Goo097898Morning"; 
-        String out = " "; 
-        for (int i = 0 ; i < str.length() ; i++){
-            char ch = str.charAt(i);
-            if (ch < '0' || ch > '9') {
-                out += ch;
+public class removeNumbers {
+    public static void main(String[] args) {
+        String input = "Hello983714567Goo097898Morning";
+        String result = "";
+
+        for (int i = 0; i < input.length(); i++) {
+            char ch = input.charAt(i);
+
+            if (!Character.isDigit(ch)) {
+                result += ch;
             }
-
-        System.out.println("String after removing numbers: " +  " " + out + " ");
-
-            
-
         }
+
+        System.out.println("Input : " + input);
+        System.out.println("Output: " + result);
     }
 }
