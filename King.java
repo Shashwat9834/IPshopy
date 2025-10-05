@@ -1,10 +1,13 @@
-class King {
+public class King {
     public static void main(String[] args) {
-     
-        String str = "Hello Good Morning";
-        String rev = "";
-        for (int i = str.length() - 1; i >= 0; i--)
-             rev += rev.charAt(i);
-        System.out.println("Reversed: " + rev);
+        String input = "Hello Good Morning";
+        String reverse = "";
+
+        for (int i = input.length() - 1; i >= 0; i--) {
+            reverse += input.charAt(i);
+        }
+
+        System.out.println("Input : " + input);
+        System.out.println("Reversed: " + reverse);
     }
 }
